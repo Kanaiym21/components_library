@@ -1,4 +1,9 @@
 
+.h1-class {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5em;
+}
 *,
 *::after,
 *::before {
@@ -43,15 +48,6 @@ body {
 
 .inside-page__heading--city,
 .card-front__text-view--city { color: #ff62b2; }
-
-.inside-page__heading--ski,
-.card-front__text-view--ski { color: #2aaac1; }
-
-.inside-page__heading--beach,
-.card-front__text-view--beach { color: #fa7f67; }
-
-.inside-page__heading--camping,
-.card-front__text-view--camping { color: #00b97c; }
 
 /* Front cover */
 
@@ -117,33 +113,6 @@ body {
 
 .inside-page__btn--city::before { 
   background-color: #ff40a1;
-}
-
-.inside-page__btn--ski { 
-  border-color: #279eb2;
-  color: #279eb2;
-}
-
-.inside-page__btn--ski::before { 
-  background-color: #279eb2;
-}
-
-.inside-page__btn--beach { 
-  border-color: #fa7f67;
-  color: #fa7f67;
-}
-
-.inside-page__btn--beach::before { 
-  background-color: #fa7f67;
-}
-
-.inside-page__btn--camping { 
-  border-color: #00b97d;
-  color: #00b97d;
-}
-
-.inside-page__btn--camping::before { 
-  background-color: #00b97d;
 }
 
 .inside-page__btn:hover { 
@@ -268,31 +237,6 @@ body {
     #ff40a1
   );
 }
-
-.card-front__tp--ski {
-  background: linear-gradient(
-    to bottom,
-    #47c2d7,
-    #279eb2
-  );
-}
-
-.card-front__tp--beach {
-  background: linear-gradient(
-    to bottom,
-    #fb9b88,
-    #f86647
-  );
-}
-
-.card-front__tp--camping {
-  background: linear-gradient(
-    to bottom,
-    #00db93,
-    #00b97d
-  );
-}
-
 /* Front card's bottom section */
 .card-front__bt {
   align-items: center;
@@ -361,14 +305,95 @@ body {
 /* Footer ====================================*/
 
 .footer {
-  background-color: #333;
-   margin-top: 3rem;
-  padding: 1rem 0;
   width: 100%;
 }
 
 .footer-text {
-  color: #fff;
+  color: black;
   font-size: 1.2rem;
   text-align: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+.cards{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.cards h1{
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services{
+  display: flex;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.content .fab{
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content > *{
+  flex: 1 1 100%;
+}
+.content:hover{
+  color: white;
+}
+.content:hover a{
+  border-color: white;
+  background: white;
+}
+.content-1:hover{
+  border-color: #4267B2;
+  background: #4267B2;
+}
+.content-1:hover a{
+  color: #4267B2;
+}
+.content h2{
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.content a{
+  margin: 22px 0;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
 }
