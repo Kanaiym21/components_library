@@ -4,6 +4,7 @@
   color: #333;
   margin-bottom: 1.5em;
 }
+*/
 *,
 *::after,
 *::before {
@@ -18,8 +19,13 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  font-size: 18px;
+  background-color: #010a01; 
 }
 ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,7 +44,17 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+.active {
+  background-color: #04AA6D;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+ }
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
@@ -335,6 +351,64 @@ li a:hover {
   color: black;
   font-size: 1.2rem;
   text-align: center;
+}
+/*neon text effect*/
+/* Additional styling */
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+}
+h4 {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1;
+}
+h4 {
+    font-size: 6.2rem;
+    animation: pulsate 0.11s ease-in-out infinite alternate;     
+}
+
+.container {
+  margin-top: 20vh;
+}
+
+@keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+
+}
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
 *{
