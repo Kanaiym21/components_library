@@ -15,7 +15,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   position: relative;
   font-size: 18px;
-  background-color: #010a01; 
+  background-color: black; 
 }
 ul {
   position: fixed;
@@ -25,7 +25,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #2B7A0B;
 }
 
 /*#secondnav*/
@@ -119,7 +119,7 @@ article {
 
 h5 {
   font-size: 10vmin;
-  line-height: 2;
+  line-height: 5;
 }
 .text-effect1 {
   font-family: "Dank Mono", ui-monospace, monospace;
@@ -178,8 +178,8 @@ li a:hover {
   margin-top: .2rem;
 }
 
-.inside-page__heading--city,
-.card-front__text-view--city { color: #ff62b2; }
+.inside-page__heading--clarkson-university,
+.card-front__text-view--clarkson-university { color: #2B7A0B; }
 
 /* Front cover */
 
@@ -239,17 +239,17 @@ li a:hover {
   z-index: -1;
 }
 
-.inside-page__btn--city { 
-  border-color: #ff40a1;
-  color: #ff40a1;
+.inside-page__btn--clarkson-university { 
+  border-color: #2B7A0B;
+  color: #2B7A0B;
 }
 
 .inside-page__btn--city::before { 
-  background-color: #ff40a1;
+  background-color: #2B7A0B;
 }
 
 .inside-page__btn:hover { 
-  color: #fafbfa;
+  color: gold;
 }
 
 .inside-page__btn:hover::before { 
@@ -366,8 +366,7 @@ li a:hover {
 .card-front__tp--city {
   background: linear-gradient(
     to bottom,
-    #ff73b9,
-    #ff40a1
+    #2B7A0B,
   );
 }
 /* Front card's bottom section */
@@ -382,15 +381,6 @@ li a:hover {
 .card-back {
   background-color: #fafbfa;
   transform: rotateY(180deg);
-}
-
-/* Specifically targeting the <video> element */
-.video__container {
-  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
-  height: auto;
-  min-height: 100%;
-  object-fit: cover;
-  width: 100%;
 }
 
 /* Inside page */
