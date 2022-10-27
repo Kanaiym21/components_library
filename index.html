@@ -15,11 +15,19 @@
         <li><a href="#about">About</a></li>
       </ul>
       
-      <p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+      <nav class="navMenu">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <div class="dot"></div>
+      </nav>
       
-    <main class="main">
-        <h1 class="h1-class"> Components Library</h1>
-        
+      <article>
+        <h5>Gradient Text</h5>
+        <p class="text-effect1">linear-gradient()</p>
+      </article>
+    <main class="main">      
         <section class="card-area">
 
             <!-- Card: City -->
@@ -34,11 +42,7 @@
                                <h2 class="card-front__heading">
                                 City break
                             </h2>
-                            <p class="card-front__text-price">
-                                From £29
-                            </p>
                                 </div>
-
                                 <div class="card-front__bt">
                                     <p class="card-front__text-view card-front__text-view--city">
                                         View me
@@ -66,8 +70,6 @@
             </section>
 
             <div class="cards">
-                <h1>
-          Responsive Social Media Cards</h1>
           <div class="services">
                   <div class="content content-1">
                     <div class="fab fa-facebook">
@@ -81,9 +83,7 @@
           <div class="content content-2">
                     <div class="fab fa-whatsapp">
           </div>
-        <footer class="footer">
-            <p class="footer-text">&copy; 2022 Kanaiym Abdigaparova</p>
-          </footer>
+      
     </main>
     <link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
 
@@ -93,5 +93,32 @@
         </h4>
     
      </div>
+     <label class="switch switch--on">
+        <input type="checkbox" class="switch__input" />
+    
+        <!-- Circle -->
+        <div class="switch__circle"></div>
+    </label>
+    
+    <label class="switch switch--off">
+        <input type="checkbox" class="switch__input" />
+    
+        <!-- Circle -->
+        <div class="switch__circle"></div>
+    </label>
+    <div class="slider">
+        <!-- Left side -->
+        <!-- Width based on the current value -->
+        <div class="slider__left" style="width: 20%"></div>
+    
+        <!-- Circle -->
+        <div class="slider__circle"></div>
+    
+        <!-- Right side -->
+        <div class="slider__right"></div>
+    </div>
+     <footer class="footer">
+        <p class="footer-text">&copy; 2022 Kanaiym Abdigaparova</p>
+      </footer>
 </body>
 </html>
