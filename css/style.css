@@ -459,7 +459,7 @@ li a:hover {
   right: 0;
   transition: all 1s ease;
   width: 15rem;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .inside-page__container {
