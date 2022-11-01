@@ -459,7 +459,8 @@ li a:hover {
   right: 0;
   transition: all 1s ease;
   width: 15rem;
-  z-index: 9999;
+  z-index: 1;
+
 }
 
 .inside-page__container {
@@ -469,6 +470,7 @@ li a:hover {
   height: 100%;
   text-align: center; 
   width: 100%;
+  z-index: 9999;
 }
 
 /* Functionality ====================================*/
