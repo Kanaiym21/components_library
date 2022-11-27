@@ -325,11 +325,8 @@ li a:hover {
     #eee8dd,
     #e3d9c6
   );
-  display:grid;
-  grid-template-columns: auto;
-  justify-items:center;
-  height: 100vh;
-  width: 100%;
+  display:flex;
+  flex-direction: row;
 }
 
 /* Container to hold all cards in one place */
@@ -600,7 +597,8 @@ h4 {
 }
 
 .container {
-  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes pulsate {
