@@ -57,13 +57,13 @@ ul {
 }
 
 .navMenu a:hover {
-  color: #fddb3a;
+  color: hsl(108 100% 62%) 
 }
 
 .navMenu .dot {
   width: 6px;
   height: 6px;
-  background: #fddb3a;
+  background: white;
   border-radius: 50%;
   opacity: 0;
   -webkit-transform: translateX(30px);
@@ -108,7 +108,7 @@ ul {
 article {
   background: linear-gradient(
     to right, 
-    hsl(108 100% 62%), 
+    hsl(108 100% 62%),
     hsl(204 50% 29.5%)
   );
   -webkit-background-clip: text;
