@@ -59,7 +59,9 @@ ul {
 .navMenu a:hover {
   color: hsl(108 100% 62%) 
 }
-
+.visited a:visited {
+  color: hsl(108 100% 62%) 
+}
 .navMenu .dot {
   width: 6px;
   height: 6px;
